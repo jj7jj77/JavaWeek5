@@ -1,0 +1,43 @@
+package javaclassweek5;
+public class Lease 
+{
+    //public static void main(String[] args)  //dont use... only for test
+    
+    //instances
+        private String tenant;
+        private int num;
+        private double rent;
+        private int term;
+        
+     //constructor //has default values
+        public Lease()  //same a class //fixed values below
+        {
+            tenant = "XXX";
+            num = 0;
+            rent = 1000;
+            term = 12;
+        }           
+        
+    //4 fields of getters
+        public String getTenant()
+        {return tenant;}
+        public int getNum()
+        {return num;}
+        public double getRent()
+        {return rent;}
+        public int getTerm()
+        {return term;}
+    //4 fields of setters  all public void
+        public void setTenant(String t)
+        {tenant = t;}
+        public void setNum(int n)
+        {num = n;}
+        public void setRent(double r)
+        {rent = r;}
+        public void setTerm(int t)
+        {term = t;} // two seprate t's different variables
+        
+        //new method
+        public void addPetFee()
+        {rent = rent + 10;}       
+}
