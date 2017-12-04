@@ -1,0 +1,46 @@
+package javaclasshomework5;
+public class Student 
+{
+    //instances
+    private int StudentID;
+    private int Points;
+    private int Credits;
+    double GradePoint;
+
+    //constructor 
+    public Student(int ID, int p, int c)  //fixed values below
+    {
+        StudentID = ID;
+        Points = p;
+        Credits = c;
+    }
+    
+    //getters and setters
+    public int getStudentID()  //getter
+    {return StudentID;}
+    public void setStudentID(int ID)   //setter
+    {StudentID = ID; } 
+    public int getPoints()
+    {return Points; }
+    public void setPoints(int p)
+    {Points = p;}
+    public int getCredits()
+    {return Credits; }
+    public void setCredits(int c)
+    {Credits = c; }
+    
+    /*public double GPA(double GradePoint)
+        { 
+        GradePoint = Points/Credits;
+        return GradePoint;
+        }*/
+    
+    //How to calculate gpa in student and output to showstudent
+    public void printMessage()
+    {
+    System.out.println("Student ID: " + StudentID);
+    System.out.println("Number of credits: " + Credits);
+    System.out.println("Number of points: " + Points);
+    System.out.println("GPA: " + GradePoint);
+    }
+}
