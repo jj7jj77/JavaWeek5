@@ -1,0 +1,25 @@
+package javaclassweek5;
+public class TestEmployee 
+{
+    public static void main(String[] args)
+    {
+        Employee Clerk = new Employee(123, "Smith", "William", 1000000000);
+        Employee Driver = new Employee(456, "Rose", "James", 2000);
+        Employee Bob = new Employee(789, "Pinto", "Olivia", 5000);
+        
+        //setter: setting the empnum to the employees
+        Clerk.setEmpNum(123);
+        Driver.setEmpNum(456);
+        Bob.setEmpNum(789);  
+        
+        //getting the 4 getters one by one
+        int i = Clerk.getEmpNum();
+        double s = Clerk.getEmpSalary(); //getting the 4 getters one by one
+    
+        System.out.println("Clerk EmpNum is " + i);
+        int k = Driver.getEmpNum();
+        System.out.println("Driver EmpNum is " + k);
+        int m = Bob.getEmpNum();
+        System.out.println("Bob EmpNum is " + m);  //getter: getting the empnum from the employee
+    }
+}
