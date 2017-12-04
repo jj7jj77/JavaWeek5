@@ -1,0 +1,32 @@
+package javaclassweek5;
+import java.util.Scanner;
+public class TestSandwich 
+{
+    public static void main (String[] args)
+    {
+        Scanner input=new Scanner(System.in);
+        System.out.println("what is your filler bitch?");
+        String filler=input.nextLine();
+        
+        System.out.println("what is your bread motherfucker?");
+        String breadType=input.nextLine();
+        
+        System.out.println("what does that motherfucking sign say????");
+        int signPrice=input.nextInt();
+        
+        Sandwich Tuna = new Sandwich(filler, breadType, signPrice); //instances
+        //Sandwich Cheese = new Sandwich("Cheese, lettuce", "Rye", 2.39);
+        
+        //getters
+        String i= Tuna.getIngredient();
+        String b = Tuna.getBread();
+        double p = Tuna.getPrice();
+        
+        //String a= Cheese.getIngredient();
+        //String c = Cheese.getBread();
+        //double g = Cheese.getPrice();
+        
+        System.out.println("You ordered a " + i + " sandwich on " + b + " bread, which costs " +  p);
+        //System.out.println("You ordered a " + a + " sandwich on " + c + " bread, which costs " +  g);
+    }
+}
