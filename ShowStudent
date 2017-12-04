@@ -1,0 +1,16 @@
+package javaclasshomework5;
+public class ShowStudent 
+{
+    public static void main(String[] args)
+    {
+        Student someStudent;
+        someStudent = new Student(9999,12,3);
+               
+        double GradePoint = someStudent.getPoints()/someStudent.getCredits();
+                
+        System.out.println("Student ID: " + someStudent.getStudentID());
+        System.out.println("Number of credits: " + someStudent.getCredits()); 
+        System.out.println("Number of points: " + someStudent.getPoints()); 
+        System.out.println("GPA: " + GradePoint); 
+    }
+}
