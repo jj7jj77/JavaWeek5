@@ -1,0 +1,27 @@
+package javaclassweek5;
+public class TestLease 
+{
+    //Test will always have a main, not the Lease or first running program
+    public static void main (String[] args)
+    {
+        //4 lease objects
+        Lease A = new Lease();
+        Lease B = new Lease();
+        
+        //method
+        B.addPetFee();
+        
+        //setter
+        A.setTenant("Alice");
+        B.setTenant("Bob");
+        
+        //getter
+        String t = A.getTenant();
+        double r = A.getRent();
+        System.out.println(t + " pays " + r);
+        
+        String j = B.getTenant();
+        double k = B.getRent();
+        System.out.println(j + " pays " + k);
+    }
+}
