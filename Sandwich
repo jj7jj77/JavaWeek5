@@ -1,0 +1,38 @@
+package javaclassweek5;
+/*
+1 variables
+2 constructor
+3 gettters
+4 setters
+*/
+public class Sandwich 
+{
+   //variables
+   private String ingredient;
+   private String bread;
+   private double price;
+   
+   //constructor
+   public Sandwich(String i, String b, double p)
+   {
+       ingredient = i;
+       bread = b;
+       price = p;
+   }
+   
+   //getters(put together 
+   public String  getIngredient()  //return string
+   { return ingredient;}
+   public String getBread()
+   { return bread;}
+   public double getPrice()
+   { return price;}
+   
+    //setters (put together) are all void
+    public void setIngredient(String i)  //setters: are void
+    { ingredient = i;}
+    public void setBread(String b)
+    { bread = b;}
+    public void setPrice(double p)
+    { price = p;} 
+}
